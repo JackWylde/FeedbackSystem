@@ -1,11 +1,15 @@
 <template>
   <div class="footer">
     <div class="flex-cont">
-      <img src="../assets/iic-logo.png" alt="iic-logo" />
-      <div class="footer-menu">
-        <button class="magnifier" v-on:click="increaseFont()">Magnifier</button>
-      </div>
+      <img class = "logo" src="../assets/iic-logo.png" alt="iic-logo" />
       <img src="../assets/nhs-logo.png" alt="nhs-logo" />
+      <div class="footer-menu">
+        <img
+                src="../assets/mag.png"
+                class="magnifier"
+                v-on:click="increaseFont()"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -48,7 +52,18 @@ export default {
   & img {
     max-width: 100%;
     height: 50px;
-    background-color: white;
   }
+}
+
+.logo {
+  background-color: white;
+  border-radius: 5px;
+  padding: 2PX;
+}
+
+.magnifier {
+  background-color: #005EB8;
+  border-radius: 5px;
+  padding: 2px;
 }
 </style>

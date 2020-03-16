@@ -8,11 +8,11 @@
 
     <div class="content-wrapper">
       <div class="button-wrap">
-        <button v-on:click.capture="getAnswer" class="answer" id="agree">
+        <button class="answer" id="agree" v-on:click="moveQ5()">
           <h3 class="mag">Agree</h3>
         </button>
 
-        <button v-on:click.capture="getAnswer" class="answer" id="disagree">
+        <button class="answer" id="disagree" v-on:click="moveQ5()">
           <h3 class="mag">Disagree</h3>
         </button>
       </div>
@@ -32,7 +32,13 @@ export default {
     "app-footer": Footer
   },
   data: function() {},
-  methods: {},
+  methods: {
+    moveQ5: function() {
+      console.log("clicked");
+      this.$router.push("QuestionFive");
+      window.location.reload();
+    }
+  },
   name: "QuestionPage",
   props: {}
 };
@@ -101,8 +107,29 @@ export default {
 .content-wrapper button {
   border-style: none;
   border-radius: 20px;
-  padding: 90px 165px;
   width: 80%;
   border: 5px solid rgba(255, 255, 255, 0.25);
+  font-size: 36px;
+}
+
+.button-wrap > button:hover,
+.button-wrap  button:active,
+.button-wrap  button:focus {
+  transition: all 0.5s;
+  transform: scale(1.1);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.975);
+  }
+
+  70% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.975);
+  }
 }
 </style>
