@@ -4,6 +4,10 @@ import "./registerServiceWorker";
 import router from "./router";
 import store from "./store";
 Vue.config.productionTip = false;
+import { Drag, Drop } from 'vue-drag-drop';
+
+Vue.component('drag', Drag);
+Vue.component('drop', Drop);
 
 new Vue({
   router,

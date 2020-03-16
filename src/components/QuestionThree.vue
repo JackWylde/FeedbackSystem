@@ -6,7 +6,7 @@
       </div>
       <div class="flex-col">
         <img src="../assets/picture5.png" alt="cloud-icon" class = "mag" />
-        <h3 class = "mag">Would you tell your friends and family that the service is good?</h3>
+        <h3 class="mag">Would you tell your friends and family that the service is good?</h3>
       </div>
     </div>
     <div class="page-row has-buttons">
