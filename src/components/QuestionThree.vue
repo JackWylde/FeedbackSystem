@@ -46,20 +46,6 @@ export default {
 <style scoped lang="scss">
 @import url("https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister&display=swap");
 
-.page-wrap {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 95vh;
-  justify-content: flex-start;
-  align-items: flex-start;
-
-  > .footer {
-    bottom: -39px;
-  }
-}
 .main-image {
   display: flex;
   flex-direction: column;
