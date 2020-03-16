@@ -1,7 +1,7 @@
 <template>
   <div class="page-wrap">
     <div class="question-wrap">
-      <h3>
+      <h3 class="mag">
         I felt involved and included during my appointment...
       </h3>
     </div>

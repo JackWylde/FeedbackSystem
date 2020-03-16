@@ -26,6 +26,7 @@ export default {
 
       arr.forEach(item => {
         item.style.transform = "scale(1.3)";
+        item.style.fontFamily = "Comic Sans";
       });
     }
   }

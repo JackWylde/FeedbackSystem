@@ -1,7 +1,7 @@
 <template>
   <div class="landing-wrap">
     <div class="question-wrap">
-      <h3>Welcome to the NHS Children's Feedback System</h3>
+      <h3 class="mag">Welcome to the NHS Children's Feedback System</h3>
     </div>
 
     <div class="char-containers">

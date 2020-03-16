@@ -2,8 +2,8 @@
   <div class="page-wrap">
     <div class="question-wrap">
       <div class="title">
-        <h3>
-          What word would you use to describe your health care appointment?
+        <h3 class="mag">
+          What word would you use to describe <br> your health care appointment?
         </h3>
       </div>
     </div>

@@ -6,6 +6,8 @@ import QuestionTwo from "../components/QuestionTwo";
 import QuestionThree from "../components/QuestionThree";
 import QuestionFour from "../components/QuestionFour";
 import QuestionFive from "../components/QuestionFive";
+import Finished from "../components/Finished";
+
 
 Vue.use(VueRouter);
 
@@ -39,6 +41,11 @@ const routes = [
     path: "/QuestionFive",
     name: "QuestionFive",
     component: QuestionFive
+  },
+  {
+    path: "/Finished",
+    name: "Finished",
+    component: Finished
   },
   {
     path: "/about",

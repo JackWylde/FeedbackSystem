@@ -1,7 +1,7 @@
 <template>
   <div class="page-wrap">
     <div class="question-wrap">
-      <h3>
+      <h3 class="mag">
         The healthcare staff are listening to me...
       </h3>
     </div>
