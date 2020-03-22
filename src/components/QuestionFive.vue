@@ -75,30 +75,29 @@ export default {
   }),
   methods: {
 
-    routeToEnd: function(){
-      this.$router.push("Finished");
-    },
-
     getAnswer: function(event) {
       let obj = event.target;
       console.log(obj);
       console.log(obj.innerHTML);
 
-      if (obj.innerHTML === "Sad") {
+      if (obj.innerHTML === "Happy" || obj.className === "lego-a") {
         console.log("a");
-        this.routeToEnd();
-      } else if (obj.innerHTML === "Safe") {
+        this.$router.push("Finished");
+      } else if (obj.innerHTML === "Safe" || obj.className === "lego-b") {
         console.log("b");
-        this.routeToEnd();
-      } else if (obj.innerHTML === "Included") {
+        this.$router.push("Finished");
+      } else if (obj.innerHTML === "Included" || obj.className === "lego-c") {
         console.log("c");
-        this.routeToEnd();
-      } else if (obj.innerHTML === "Confused") {
+        this.$router.push("Finished");
+      } else if (obj.innerHTML === "Sad" || obj.className === "lego-d") {
         console.log("d");
-        this.routeToEnd();
-      } else if (obj.innerHTML === "Angry") {
+        this.$router.push("Finished");
+      } else if (obj.innerHTML === "Confused" || obj.className === "lego-e") {
         console.log("e");
-        this.routeToEnd();
+        this.$router.push("Finished");
+      } else if (obj.innerHTML === "Angry" || obj.className === "lego-f") {
+        console.log("f");
+        this.$router.push("Finished");
       }
     }
   },
