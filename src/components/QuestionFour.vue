@@ -19,11 +19,11 @@
     </div>
 
     <div class="pointy-image">
-      <p>Pointing</p>
+      <img src="../assets/hand_up.png" alt="Tyler pointing up" />
     </div>
     <app-footer></app-footer>
   </div>
-</template>
+</template> 
 
 <script>
 import Footer from "../components/Footer.vue";
@@ -74,6 +74,8 @@ export default {
 }
 
 .content-wrapper {
+  position: relative;
+  bottom: -75px; 
   display: flex;
   justify-content: center;
   align-content: center;
@@ -97,11 +99,14 @@ export default {
   }
 }
 .pointy-image {
-  background-color: #2ca5e9;
   height: 40vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative; 
+  z-index: 200;
+  transition: all 1s; 
+  animation: pop-in 1s ; 
 }
 
 .content-wrapper button {
@@ -131,5 +136,19 @@ export default {
   100% {
     transform: scale(0.975);
   }
+}
+
+@keyframes pop-in {
+
+  0%{
+     transform: translateY(200%); 
+     transform: scale(0);  
+  }
+
+  100% {
+    transform: translateY(0%); 
+    transform: scale(1);
+  }
+  
 }
 </style>

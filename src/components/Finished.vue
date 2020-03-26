@@ -30,7 +30,18 @@ export default {
   components: {
     "app-footer": Footer
   },
-  props: {}
+  props: {
+
+  },
+  methods: {
+    reloadPage: function() {
+      this.$router.push("/"); 
+    }
+  },
+  mounted() {
+    setTimeout(this.reloadPage, 4000); 
+  },
+
 };
 </script>
 
