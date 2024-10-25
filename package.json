@@ -14,7 +14,7 @@
     "firebase-admin": "^8.9.2",
     "register-service-worker": "^1.6.2",
     "uuid": "^3.4.0",
-    "vue": "^2.6.11",
+    "vue": "^3.0.0",
     "vue-drag-drop": "^1.1.4",
     "vue-router": "^3.1.5",
     "vuex": "^3.1.2"
